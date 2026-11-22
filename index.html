@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaisseaux Stellaire</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #071326;
+    color: white;
+    text-align: center;
+}
+header {
+    padding: 35px 15px;
+    background: #102c50;
+}
+h1 {
+    color: #55c8ff;
+}
+.container {
+    padding: 25px;
+}
+input {
+    width: 85%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+button {
+    padding: 14px 25px;
+    background: #168cff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+#answer {
+    margin-top: 25px;
+    color: #55c8ff;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🚀 Vaisseaux Stellaire</h1>
+<p>Votre assistant intelligent</p>
+</header>
+
+<div class="container">
+<h2>Bienvenue !</h2>
+<p>Posez votre question à notre assistant.</p>
+
+<input id="question" type="text" placeholder="Écrivez votre question...">
+
+<br>
+
+<button onclick="answer()">Envoyer</button>
+
+<div id="answer"></div>
+</div>
+
+<script>
+function answer() {
+let question = document.getElementById("question").value;
+
+if (question.trim() === "") {
+document.getElementById("answer").innerText =
+"Veuillez écrire une question.";
+} else {
+document.getElementById("answer").innerText =
+"Merci pour votre question ! Vaisseaux Stellaire est en développement.";
+}
+}
+</script>
+
+</body>
+</html>
